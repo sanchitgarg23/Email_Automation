@@ -1,0 +1,29 @@
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Environment Variables & Secrets
+.env
+*.env
+credentials.json
+token.json
+
+# Local Vector Database & Indexes
+db/
+chroma/
+
+# Python cache & artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# IDE & OS
+.DS_Store
+.idea/
+.vscode/
+
+

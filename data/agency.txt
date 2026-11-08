@@ -1,0 +1,51 @@
+**SG AI Automation: Intelligent AI Solutions & Workflow Automation**
+
+---
+
+**Welcome to SG AI Automation**
+
+SG AI Automation is a specialized AI development and consulting agency founded by Sanchit Garg. We help businesses streamline operations, automate customer support, and deploy custom autonomous AI agent workflows to accelerate growth.
+
+---
+
+**Services & Capabilities**
+
+We offer end-to-end AI consulting, system integration, and automation services:
+
+- **AI Customer Support & Email Automation**: Autonomous multi-agent systems powered by LangGraph, Groq, and RAG that continuously monitor inboxes, categorize customer queries, draft personalized responses, and verify quality before sending.
+- **Custom AI Agent Workflows**: Task-specific autonomous agents built with LangChain, LangGraph, and modern LLM tool-calling architectures for document analysis, lead generation, and business operations.
+- **RAG & Knowledge Base Integration**: Connecting proprietary enterprise data, manuals, and FAQs with local on-device vector stores (ChromaDB) for high-accuracy, zero-hallucination answers.
+- **API & System Integrations**: Custom integrations across Gmail, Slack, CRM platforms, and database backends.
+
+---
+
+**Plans and Pricing**
+
+Choose the engagement model that best suits your business needs:
+
+1. **Starter Plan**
+   - Single-workflow AI automation deployment
+   - Standard email/ticket classification & drafting
+   - Basic knowledge base indexing (up to 50 documents)
+   - Price: $49/month (or $499 one-time setup)
+
+2. **Pro Plan**
+   - Full multi-agent LangGraph workflow automation
+   - Custom RAG knowledge store with automatic re-indexing
+   - Advanced QA proofreading and human-in-the-loop review
+   - Priority email support and monthly workflow optimizations
+   - Price: $99/month (or $999 one-time setup)
+
+3. **Enterprise Plan**
+   - Fully bespoke AI agent infrastructure and multi-channel deployment (Email, Slack, Webhooks)
+   - Custom LLM fine-tuning and proprietary data security
+   - Dedicated support and 24/7 monitoring
+   - Price: Custom Quote (contact sanchitgarg23april@gmail.com)
+
+---
+
+**Contact & Support**
+
+For project inquiries, custom automation requests, or support:
+- Email: sanchitgarg23april@gmail.com
+- Lead AI Engineer: Sanchit Garg
