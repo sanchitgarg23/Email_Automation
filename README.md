@@ -13,7 +13,7 @@ The system automatically monitors an incoming Gmail inbox, categorizes emails, p
 * **Safe Spam & Marketing Filtering**: Automatically filters out promotional newsletters, social notifications, and bot emails without sending unintended replies.
 * **Semantic Search (RAG)**: Uses **on-device local vector embeddings** (`all-MiniLM-L6-v2` via ONNX/ChromaDB) to accurately answer product, service, and pricing questions.
 * **AI Draft Generation & QA Proofreading**: Drafts professional responses and runs automated quality and tone checks before approval.
-* **Interactive Live Web Dashboard**: Built-in FastAPI dashboard featuring real-time Server-Sent Events (SSE) streaming, pipeline stepper visualization, and generated draft previews.
+* **Pure Python Streamlit Dashboard**: Sleek, modern web application built 100% in Python with live agent status tracking, draft inspection, and simulation triggers.
 
 ---
 
@@ -23,7 +23,8 @@ The system automatically monitors an incoming Gmail inbox, categorizes emails, p
 * **LLM Engine**: [Groq](https://groq.com/) (using high-speed open models like `openai/gpt-oss-120b`)
 * **Vector Store & Embeddings**: [ChromaDB](https://www.trychroma.com/) with free, on-device local ONNX embeddings
 * **Email Service**: Google Gmail API (OAuth 2.0 Desktop Flow)
-* **Web Server & Dashboard**: [FastAPI](https://fastapi.tiangolo.com/), [Uvicorn](https://www.uvicorn.org/), Tailwind CSS, Lucide Icons
+* **Web UI & Dashboard**: [Streamlit](https://streamlit.io/) (100% Python, zero HTML/CSS templates)
+* **API Backend**: [FastAPI](https://fastapi.tiangolo.com/), [LangServe](https://github.com/langchain-ai/langserve), [Uvicorn](https://www.uvicorn.org/)
 
 ---
 
@@ -65,24 +66,31 @@ Place your Google Cloud OAuth client secret JSON in the project root as `credent
 
 ## 🖥️ Running the Application
 
-### Option A: Interactive Web Dashboard (Recommended)
-Run the real-time web interface with live streaming activity logs:
+### Option A: Interactive Streamlit Dashboard (Recommended)
+Run the pure Python web interface with live agent execution tracking:
+```bash
+source .venv/bin/activate
+streamlit run app.py
+```
+* **Streamlit App**: [http://localhost:8501](http://localhost:8501)
+
+### Option B: FastAPI / LangServe Backend API
+Run the LangGraph agent backend service:
 ```bash
 source .venv/bin/activate
 python deploy_api.py
 ```
-* **Dashboard**: [http://localhost:8001](http://localhost:8001)
-* **LangServe Playground**: [http://localhost:8001/playground](http://localhost:8001/playground)
-* **Swagger API Docs**: [http://localhost:8001/docs](http://localhost:8001/docs)
+* **Swagger API Docs**: [http://localhost:8000/docs](http://localhost:8000/docs)
+* **LangServe Playground**: [http://localhost:8000/playground](http://localhost:8000/playground)
 
-### Option B: Terminal Inbox Automation Worker
+### Option C: Terminal Inbox Automation Worker
 Run a single scan and response cycle directly in the console:
 ```bash
 source .venv/bin/activate
 python main.py
 ```
 
-### Option C: Offline Simulation Mode
+### Option D: Offline Simulation Mode
 Test the LangGraph multi-agent flow locally with mock emails (no Gmail connection required):
 ```bash
 source .venv/bin/activate
